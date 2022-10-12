@@ -13,26 +13,13 @@ use Magento\Framework\MessageQueue\Lock\WriterInterface;
 class Lock
 {
     /**
-     * @var WriterInterface
-     */
-    private $writer;
-
-    /**
-     * @var DeploymentConfig
-     */
-    private $deploymentConfig;
-
-    /**
      * @param WriterInterface $writer
      * @param DeploymentConfig $deploymentConfig
      */
     public function __construct(
-        WriterInterface $writer,
-        DeploymentConfig $deploymentConfig
-    )
-    {
-        $this->writer = $writer;
-        $this->deploymentConfig = $deploymentConfig;
+        private WriterInterface $writer,
+        private DeploymentConfig $deploymentConfig
+    ) {
     }
 
     /**

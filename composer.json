@@ -1,0 +1,34 @@
+{
+    "name": "scnsoft/messagequeue",
+    "description": "",
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magento/framework": "*",
+        "magento/module-message-queue": "^100.4",
+        "magento/magento-composer-installer": "*"
+    },
+    "suggest": {
+
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ScnSoft\\MessageQueue\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "ScnSoft/MessageQueue"
+            ]
+        ]
+    }
+}
